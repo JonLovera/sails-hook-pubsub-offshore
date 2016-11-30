@@ -1,0 +1,13 @@
+{
+  "name": "sails-hook-pubsub-offshore",
+  "version": "0.0.1",
+  "description": "pubsub for offshore",
+  "main": "index.js",
+  "sails": {
+    "isHook": true
+  },
+  "dependencies": {
+    "lodash": "3.10.1",
+    "sails-stringfile": "^0.3.2"
+  }
+}
