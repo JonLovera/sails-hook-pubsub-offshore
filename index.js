@@ -3,7 +3,7 @@
  */
 
 var util = require('util');
-var _ = require('@sailshq/lodash');
+var _ = require('lodash');
 var STRINGFILE = require('sails-stringfile');
 
 
@@ -94,19 +94,19 @@ module.exports = function(sails) {
       // If `views` or `orm-offshore` hook is not enabled, complain and disable the hook.
       if (!sails.hooks.sockets || !sails.hooks['orm-offshore']) {
         sails.log.verbose('Cannot use `pubsub-offshore` hook without the `sockets` and `orm-offshore` hooks enabled!\n');
-        sails.hooks.pubsub = false;
+        sails.hooks['pubsub-offshore'] = false;
         return cb();
       }
 
 
       // If `views` or `orm-offshore` hook is not enabled, complain and respond w/ error
       if (!sails.hooks.sockets) {
-        return cb( Err.dependency('pubsub', 'sockets') );
+        return cb( Err.dependency('pubsub-offshore', 'sockets') );
       }
 
 
       if (!sails.hooks['orm-offshore']) {
-        return cb( Err.dependency('pubsub', 'orm-offshore') );
+        return cb( Err.dependency('pubsub-offshore', 'orm-offshore') );
       }
 
       // Wait for `hook:orm-offshore:loaded`
@@ -126,7 +126,7 @@ module.exports = function(sails) {
         self.augmentModels();
 
         // Trigger an event in case something needs to respond to the pubsub reload
-        sails.emit('hook:pubsub:reloaded');
+        sails.emit('hook:pubsub-offshore:reloaded');
       });
 
     },
