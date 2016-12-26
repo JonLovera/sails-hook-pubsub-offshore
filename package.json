@@ -1,27 +1,88 @@
 {
-  "name": "sails-hook-pubsub-offshore",
-  "version": "0.0.2",
-  "description": "pubsub for offshore",
-  "main": "index.js",
-  "scripts": {
-    "test": "node ./node_modules/mocha/bin/mocha test -t 15000"
+  "_args": [
+    [
+      {
+        "raw": "sails-hook-pubsub-offshore",
+        "scope": null,
+        "escapedName": "sails-hook-pubsub-offshore",
+        "name": "sails-hook-pubsub-offshore",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "/Users/jonlov/Documents/System Engineer/Projects/Wipeit/web"
+    ]
+  ],
+  "_from": "sails-hook-pubsub-offshore@latest",
+  "_id": "sails-hook-pubsub-offshore@0.0.2",
+  "_inCache": true,
+  "_location": "/sails-hook-pubsub-offshore",
+  "_nodeVersion": "6.2.1",
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/sails-hook-pubsub-offshore-0.0.2.tgz_1481124623295_0.6101971282623708"
   },
-  "sails": {
-    "isHook": true
+  "_npmUser": {
+    "name": "atiertant",
+    "email": "a.tiertant@atlantis-software.net"
   },
+  "_npmVersion": "3.9.3",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "sails-hook-pubsub-offshore",
+    "scope": null,
+    "escapedName": "sails-hook-pubsub-offshore",
+    "name": "sails-hook-pubsub-offshore",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/sails-hook-pubsub-offshore/-/sails-hook-pubsub-offshore-0.0.2.tgz",
+  "_shasum": "b530c4e5c74259fa030681d45923773a136f5892",
+  "_shrinkwrap": null,
+  "_spec": "sails-hook-pubsub-offshore",
+  "_where": "/Users/jonlov/Documents/System Engineer/Projects/Wipeit/web",
   "dependencies": {
     "lodash": "3.10.1",
     "sails-stringfile": "^0.3.2"
   },
+  "description": "pubsub for offshore",
   "devDependencies": {
-    "mocha": "3.0.2",
     "fs-extra": "0.30.0",
+    "mocha": "3.0.2",
+    "offshore-memory": "^0.0.6",
     "sails": "^1.0.0-5",
-    "sails.io.js": "^1.0.0",
-    "socket.io-client": "1.4.5",
-    "sails-hook-sockets": "^0.13.8",
-    "sails-hook-orm-offshore": "^0.0.5",
     "sails-hook-blueprints-offshore": "^0.0.2",
-    "offshore-memory": "^0.0.6"
-  }
+    "sails-hook-orm-offshore": "^0.0.5",
+    "sails-hook-sockets": "^0.13.8",
+    "sails.io.js": "^1.0.0",
+    "socket.io-client": "1.4.5"
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "b530c4e5c74259fa030681d45923773a136f5892",
+    "tarball": "https://registry.npmjs.org/sails-hook-pubsub-offshore/-/sails-hook-pubsub-offshore-0.0.2.tgz"
+  },
+  "gitHead": "3fdedc88a899de6e1266b1d2804edc657acc0305",
+  "main": "index.js",
+  "maintainers": [
+    {
+      "name": "atiertant",
+      "email": "a.tiertant@atlantis-software.net"
+    }
+  ],
+  "name": "sails-hook-pubsub-offshore",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "sails": {
+    "isHook": true
+  },
+  "scripts": {
+    "test": "node ./node_modules/mocha/bin/mocha test -t 15000"
+  },
+  "version": "0.0.2"
 }
